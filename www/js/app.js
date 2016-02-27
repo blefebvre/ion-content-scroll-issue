@@ -22,3 +22,9 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('MyCtrl', function($scope, $ionicScrollDelegate) {
+  $scope.onScrollComplete = function(scrollTop) {
+    alert("on-scroll-complete! scrollTop=" + scrollTop);
+  };
+});
